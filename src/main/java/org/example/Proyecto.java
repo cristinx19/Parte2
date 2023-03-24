@@ -1,4 +1,6 @@
+package org.example;
 
+import java.time.LocalDate;
 import java.util.*;
 
 
@@ -14,12 +16,21 @@ public class Proyecto {
   private LocalDate fechaInicio;
   private LocalDate fechaFin;
   private String descripcion;
+
+  private Lugar lugarcito;
   
   //
   // Constructors
   //
   public Proyecto () { };
-  
+
+  public Proyecto(LocalDate fechaInicio, LocalDate fechaFin, String descripcion, Lugar lugarcito) {
+    this.fechaInicio = fechaInicio;
+    this.fechaFin = fechaFin;
+    this.descripcion = descripcion;
+    this.lugarcito = lugarcito;
+  }
+
   //
   // Methods
   //

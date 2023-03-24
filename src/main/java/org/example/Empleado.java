@@ -1,3 +1,4 @@
+package org.example;
 
 import java.util.*;
 
@@ -15,7 +16,17 @@ public class Empleado {
   private String apellido1;
   private String apellido2;
   private String rol;
-  
+
+  private Proyecto proyecto;
+
+  public Empleado(String nombre, String apellido1, String apellido2, String rol, Proyecto proyecto) {
+    this.nombre = nombre;
+    this.apellido1 = apellido1;
+    this.apellido2 = apellido2;
+    this.rol = rol;
+    this.proyecto = proyecto;
+  }
+
   //
   // Constructors
   //

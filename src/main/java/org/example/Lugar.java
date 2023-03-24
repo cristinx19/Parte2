@@ -1,3 +1,4 @@
+package org.example;
 
 import java.util.*;
 
@@ -20,7 +21,14 @@ public class Lugar {
   // Constructors
   //
   public Lugar () { };
-  
+
+  public Lugar(int id, String direccion, String localidad, String provincia) {
+    this.id = id;
+    this.direccion = direccion;
+    this.localidad = localidad;
+    this.provincia = provincia;
+  }
+
   //
   // Methods
   //
